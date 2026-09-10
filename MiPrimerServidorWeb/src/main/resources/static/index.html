@@ -4,62 +4,172 @@
     <meta charset="UTF-8">
     <title>Index</title>
     <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Inter", sans serif;
+            background-color: #f4f7f6;
+            color: #333;
+            line-height: 1.6;
+            padding: 40px 20px;
+        }
+
+        .contenedor {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        .profile-header {
+            display: flex;
+            align-items: center;
+            gap: 25px;
+            margin-bottom: 30px;
+            padding-bottom: 25px;
+            border-bottom: 2px solid #eef0f2;
+        }
+
+        #img-
+
+
+
+        #img-presentacion{
+            width: 130px;
+            height: 130px;
+            object-fit: cover;
+            border-radius: 50px;
+            border: 4px solid #0056b3;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            color: #222;
+            font-size: 2.2rem;
+        }
+
+        h2, h3 {
+            color: #0056b3;
+            margin-top: 35px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            margin-bottom: 15px;
+            font-size: 1.05rem;
+            color: #555;
+        }
+
         table {
-            border-collapse : collapse;
+            width: 100%;
+            border-collapse: collapse;
             margin: 20px 0;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
         }
-        th, td {
-            border: 1px solid black;
-            padding: 8px 15px;
+        th{
+            background-color: #0056b3;
+            color: white;
+            font-weight: 600;
         }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        .redes-sociales {
+            list-style-type: none;
+            display: flex;
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        .redes-sociales a {
+            display: inline-block;
+            text-decoration: none;
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            border-radius: 6px;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+        }
+
+        .redes-sociales a[href*="github"]:hover {
+            background-color: #000;
+        }
+
+        .redes sociales a[href*="linkedin"]:hover {
+            background-color: #0077b5;
+        }
+
+
+
+        #titulo {
+        }
+
     </style>
 </head>
 <body>
 
-    <h1>Portafolio de Luis Andres</h1>
+    <div class="contenedor">
 
-    <img src="https://png.pngtree.com/png-vector/20250110/ourmid/pngtree-software-engineer-3d-icon-in-clean-design-isolated-on-white-background-png-image_15139731.png" width="200">
+        <h1 id="titulo">Portafolio de Luis Andres</h1>
 
-    <p>Bienvenido a mi portafolio personal, aquí podrás ver <br>
-        mi historial académico a través de la siguiente tabla:</p>
+        <img id="img-presentacion" src="https://png.pngtree.com/png-vector/20250110/ourmid/pngtree-software-engineer-3d-icon-in-clean-design-isolated-on-white-background-png-image_15139731.png">
 
-    <h2>Mi Historial Académico</h2>
-    <table>
+        <p>Bienvenido a mi portafolio personal, aquí podrás ver mi historial académico a través de la siguiente tabla:</p>
 
-        <tr>
-            <th></th>
-            <th>Programación 1</th>
-            <th>Bases de datos Avanzadas</th>
-            <th>Diseño de Software</th>
-        </tr>
+        <h2>Mi Historial Académico</h2>
+        <table>
 
-        <tr>
-            <th>Calificaciones</th>
-            <th>10</th>
-            <th>10</th>
-            <th>9</th>
-        </tr>
+            <tr>
+                <th></th>
+                <th>Programación 1</th>
+                <th>Bases de datos Avanzadas</th>
+                <th>Diseño de Software</th>
+            </tr>
 
-    </table>
+            <tr>
+                <th>Calificaciones</th>
+                <th>10</th>
+                <th>10</th>
+                <th>9</th>
+            </tr>
 
-
-
-    <h3>Mis redes sociales</h3>
-    <p>Soy un estudiante en proceso de convertirme en un Ingeniero en Software, <br>
-    a lo largo de mi aprendizaje he realizado diferentes proyectos y los he documentado aquí:</p>
-    <ul>
-        <li>
-            <a href="https://github.com/LAndresLuna">Github</a>
-        </li>
-        <li>
-            <a href="https://www.linkedin.com/in/luis-andres-luna-%C3%A1lvarez-95392032a/">LinkedIn</a>
-        </li>
-    </ul>
+        </table>
 
 
 
-    <p>También podrás conocer mis hobbies a través del siguiente enlace:</p>
-    <a href = "hobbies.html">Accede a mis hobbies</a>
+        <h3>Mis redes sociales</h3>
+        <p>Soy un estudiante en proceso de convertirme en un Ingeniero en Software, <br>
+        a lo largo de mi aprendizaje he realizado diferentes proyectos y los he documentado aquí:</p>
+        <ul>
+            <li>
+                <a href="https://github.com/LAndresLuna">Github</a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/luis-andres-luna-%C3%A1lvarez-95392032a/">LinkedIn</a>
+            </li>
+        </ul>
+
+
+
+        <p>También podrás conocer mis hobbies a través del siguiente enlace:</p>
+        <a href = "hobbies.html">Accede a mis hobbies</a>
+
+    </div>
 
 </body>
 </html>
