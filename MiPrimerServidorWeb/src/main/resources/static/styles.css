@@ -19,6 +19,14 @@ header {
     padding: 20px;
 }
 
+.header-contenido {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+
+}
+
 header h1 {
     font-size: 2rem;
 }
@@ -29,6 +37,13 @@ header h2 {
 
 header a {
     color: #acc1d5;
+}
+
+.grid-dos-columnas{
+    display: grid;
+    flex-direction: row;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
 }
 
 h2 {
